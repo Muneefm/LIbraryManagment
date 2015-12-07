@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="library.app.com.libraryonyourfingertips.UserDetails">
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:indeterminate="true"
+        android:id="@+id/progidu"
+        android:visibility="gone"
+        style="@style/GPlusProgressBar"
+        android:layout_alignParentTop="true" />
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_below="@+id/progid"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="fill_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/rr_desccard"
+        custom:cardBackgroundColor="@color/white"
+        android:layout_centerHorizontal="true"
+       >
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:id="@+id/containerUser"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="50dp"
+
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content">
+   <!-- <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_usround"
+        android:layout_centerHorizontal="true"
+        android:cropToPadding="false"
+         />-->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/usr"
+        android:layout_centerHorizontal="true"
+
+        />
+    <TextView android:text=" "
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/blue500"
+        android:id="@+id/nameUser"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imageView"
+        android:layout_height="wrap_content" />
+
+    <TextView android:text=""
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/material_blue_grey_950"
+        android:textSize="16dp"
+        android:id="@+id/regId"
+
+        android:layout_below="@+id/nameUser"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rr_desccard"
+            android:id="@+id/detCard"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            custom:cardBackgroundColor="@color/white"
+            android:layout_centerHorizontal="true"
+
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/headinga"
+                android:layout_below="@+id/rr_desccard"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Library Details"
+                    android:layout_margin="5dp"
+                    android:id="@+id/libHead"
+                    android:gravity="center"
+                    android:textColor="@color/holo_red_dark"
+                    android:textSize="25dp"
+                    />
+                </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/headinga"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/teal500"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/fi"
+            android:text="Fine:"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="RS 0"
+            android:textSize="20dp"
+            android:textColor="@color/material_blue_grey_950"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/fineAmount"
+            android:layout_below="@+id/fi"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Books:"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/teal500"
+
+            android:id="@+id/bookn"
+            android:layout_below="@+id/fineAmount"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=""
+            android:id="@+id/bookName"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/bookn"
+            android:textColor="@color/material_blue_grey_950"
+            android:layout_centerHorizontal="true"
+
+            android:textSize="20dp"
+
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Date:"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/teal500"
+
+            android:id="@+id/lsdate"
+            android:layout_below="@+id/bookName"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=""
+            android:id="@+id/lastDate"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/lsdate"
+            android:textColor="@color/material_blue_grey_950"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

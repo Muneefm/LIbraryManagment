@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Library on your finger tips</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_sign_up">signUp</string>
+    <string name="title_activity_boo_search_result">Book Search Result</string>
+    <string name="title_activity_user_details">User Profile</string>
+
+</resources>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:indeterminate="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/progid2"
+        android:visibility="gone"
+        style="@style/GPlusProgressBar"
+        />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/progid2"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:background="@color/BackgroundColor"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+            <!--    <com.pnikosis.materialishprogress.ProgressWheel
+                    android:id="@+id/progress_wheelsignUp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    wheel:barColor="@color/pureRed"
+
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />-->
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rr_desccard"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rr_desccard_bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="false"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="30dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/hea"
+    android:fontFamily="sans-serif-light"
+
+    android:textColor="@color/holo_red_dark"
+    android:textSize="20dp"
+    android:text="Enter the Credentials."
+    android:layout_alignParentTop="true"
+    />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/firstname"
+                            android:hint="First Name "
+                            android:layout_below="@+id/hea"
+                            android:layout_gravity="left|top"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            style="@style/EditTextStyle"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Last Name"
+                            android:ems="10"
+                            android:id="@+id/lastname"
+                            style="@style/EditTextStyle"
+                            android:layout_gravity="center_horizontal|top"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_below="@+id/firstname"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Reg no:"
+                            android:ems="10"
+                            android:id="@+id/username"
+                            style="@style/EditTextStyle"
+                            android:layout_gravity="center_horizontal|top"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_below="@id/lastname"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:hint="Password"
+                            android:ems="10"
+                            android:id="@+id/password"
+                            style="@style/EditTextStyle"
+                            android:layout_gravity="center_horizontal|top"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_below="@id/username"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp" />
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:hint="Phone Number "
+                            android:ems="10"
+                            android:id="@+id/phone"
+                            style="@style/EditTextStyle"
+                            android:layout_gravity="center_horizontal|top"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_below="@id/password"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:hint="Email "
+                            android:ems="10"
+                            android:id="@+id/emailid"
+                            style="@style/EditTextStyle"
+                            android:layout_gravity="center_horizontal|top"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_below="@id/phone"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp" />
+
+
+
+                        <com.gc.materialdesign.views.ButtonRectangle
+                            android:id="@+id/signUpn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="46dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_below="@+id/emailid"
+                            android:layout_alignParentRight="true"
+                            android:background="#1E88E5"
+                            android:text="Sign Up" />
+                        <!--   <com.gc.materialdesign.views.ButtonFlat
+                               android:id="@+id/signIN2"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_below="@+id/email"
+                               android:layout_marginTop="36dp"
+
+                               android:layout_toLeftOf="@+id/signUpn"
+                               android:background="#1E88E5"
+                               android:text="Sign In" />-->
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

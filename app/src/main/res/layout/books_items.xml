@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<android.support.v7.widget.CardView
+
+
+
+    style="?android:buttonBarButtonStyle"
+
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardviewuser"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+
+        android:id="@+id/cont"
+
+
+        android:layout_alignParentEnd="true">
+
+
+               <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="133"
+
+                    android:fontFamily="sans-serif-light"
+
+                    android:textSize="20dp"
+                    android:id="@+id/userid_id"
+                    android:shadowColor="@color/holo_red_dark"
+                    android:textColorHint="@color/holo_red_dark"
+                    android:textColor="@color/blue500"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignBottom="@+id/linearLayout2"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1.16" />-->
+
+                    <TextView
+                        android:id="@+id/bookname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="27sp"
+                        android:layout_marginTop="6dp"
+
+
+
+                        android:textColor="@color/nallaBlue"
+                        android:text="Lovelace ada"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_marginBottom="10dp"
+
+
+                        android:layout_alignParentTop="true"
+
+                        android:layout_marginRight="18dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:id="@+id/sub"
+                        android:text="Author :"
+                        android:layout_below="@+id/bookname"
+                        android:layout_marginTop="6dp"
+
+                        android:textColor="@color/teal500"
+                        android:textSize="15dp"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:id="@+id/author"
+                        android:text="Tyson Crizz"
+
+                        android:layout_toRightOf="@+id/sub"
+                        android:layout_marginTop="6dp"
+
+
+                        android:textColor="@color/blue500"
+                        android:textSize="15dp"
+                        android:layout_below="@+id/bookname"
+                         />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/publ"
+            android:text="Publisher :"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="40dp"
+
+            android:textColor="@color/teal500"
+            android:textSize="15dp"
+            android:layout_below="@+id/bookname"
+            android:layout_toRightOf="@+id/author"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/publisher"
+            android:text="Anonymous"
+            android:layout_marginTop="6dp"
+
+            android:layout_toRightOf="@+id/publ"
+            android:textColor="@color/blue500"
+            android:textSize="15dp"
+            android:layout_below="@+id/bookname"
+            />
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
